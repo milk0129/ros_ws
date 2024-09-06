@@ -1,0 +1,25 @@
+ros2 pkg create --build-type ament_python local_pgm --dependencies rclpy std_msgs geometry_msgs
+
+ros2 pkg create --build-type ament_python listen_pgm --dependencies rclpy std_msgs geometry_msgs
+
+touch local_pgm_launch_file.launch.py
+
+touch listen_pgm_launch_file.launch.py
+
+chmod +x local_pgm_launch_file.launch.py
+
+chmod +x listen_pgm_launch_file.launch.py
+
+colcon build --symlink-install --packages-select local_pgm
+
+colcon build --symlink-install --packages-select listen_pgm
+
+source ~/nav2_ws/install/local_setup.bash
+
+ros2 launch local_pgm local_pgm_launch_file.launch.py
+ros2 launch listen_pgm listen_pgm_launch_file.launch.py
+ros2 launch robot_localization navsat_transform.launch.py
+
+
+xrandr --output eDP-1 --brightness 0.5
+
