@@ -171,23 +171,23 @@ class TfBroadcaster(Node):
         t.transform.rotation.z = 0.0
         t.transform.rotation.w = 1.0"""
 
-        # map과 utm_k_frame 간의 변환도 설정
-        t_map_to_utm = geometry_msgs.msg.TransformStamped()
-        t_map_to_utm.header.stamp = self.get_clock().now().to_msg()
-        t_map_to_utm.header.frame_id = 'map'
-        t_map_to_utm.child_frame_id = 'gps_frame'
+        # map과 gps 프레임 간의 변환도 설정
+        t_map_to_gps = geometry_msgs.msg.TransformStamped()
+        t_map_to_gps.header.stamp = self.get_clock().now().to_msg()
+        t_map_to_gps.header.frame_id = 'map'
+        t_map_to_gps.child_frame_id = 'gps_frame'
 
-        # map 프레임에서 UTM-K 프레임으로의 변환을 정의
-        t_map_to_utm.transform.translation.x = gps_lat
-        t_map_to_utm.transform.translation.y = gps_lon
-        t_map_to_utm.transform.translation.z = 0.0
+        # map 프레임에서 gps 프레임으로의 변환을 정의
+        t_map_to_gps.transform.translation.x = gps_lat
+        t_map_to_gps.transform.translation.y = gps_lon
+        t_map_to_gps.transform.translation.z = 0.0
 
-        t_map_to_utm.transform.rotation.x = 0.0
-        t_map_to_utm.transform.rotation.y = 0.0
-        t_map_to_utm.transform.rotation.z = 0.0
-        t_map_to_utm.transform.rotation.w = 1.0
+        t_map_to_gps.transform.rotation.x = 0.0
+        t_map_to_gps.transform.rotation.y = 0.0
+        t_map_to_gps.transform.rotation.z = 0.0
+        t_map_to_gps.transform.rotation.w = 1.0
 
-        self.broadcaster.sendTransform(t_map_to_utm)
+        self.broadcaster.sendTransform(t_map_to_gps)
         self.get_logger().info("map과 gps프레임 변환을 발행했습니다.")
 
         t_gps_to_base = geometry_msgs.msg.TransformStamped()
