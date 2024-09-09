@@ -139,27 +139,27 @@ class TfBroadcaster(Node):
         utm_z = gps_alt  # 고도는 그대로 사용
 
         # 변환 정의
-        t = geometry_msgs.msg.TransformStamped()
-        t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'map'
-        t.child_frame_id = 'utm_k'
+        t_map_to_utm = geometry_msgs.msg.TransformStamped()
+        t_map_to_utm.header.stamp = self.get_clock().now().to_msg()
+        t_map_to_utm.header.frame_id = 'map'
+        t_map_to_utm.child_frame_id = 'utm_k'
 
         # translation 초기화
-        t.transform.translation.x = float(utm_x)
-        t.transform.translation.y = float(utm_y)
-        t.transform.translation.z = float(utm_z)
+        t_map_to_utm.transform.translation.x = float(utm_x)
+        t_map_to_utm.transform.translation.y = float(utm_y)
+        t_map_to_utm.transform.translation.z = float(utm_z)
 
         # rotation 초기화
-        t.transform.rotation.x = 0.0
-        t.transform.rotation.y = 0.0
-        t.transform.rotation.z = 0.0
-        t.transform.rotation.w = 1.0
+        t_map_to_utm.transform.rotation.x = 0.0
+        t_map_to_utm.transform.rotation.y = 0.0
+        t_map_to_utm.transform.rotation.z = 0.0
+        t_map_to_utm.transform.rotation.w = 1.0
 
         # 변환 방송
-        self.broadcaster.sendTransform(t)
+        self.broadcaster.sendTransform(t_map_to_utm)
         self.get_logger().info(f"위도, 경도, 고도: {gps_lat}, {gps_lon}, {gps_alt}")
         self.get_logger().info(f"보내는 변환: {utm_x}, {utm_y}, {utm_z}")
-
+        self.get_logger().info("map과 utm 프레임 변환을 발행했습니다.")
         """# map 프레임의 위치를 초기화 (기본 위치로 설정)
         t.transform.translation.x = latitude
         t.transform.translation.y = longitude
@@ -171,9 +171,6 @@ class TfBroadcaster(Node):
         t.transform.rotation.z = 0.0
         t.transform.rotation.w = 1.0"""
 
-        self.broadcaster.sendTransform(t)
-        self.get_logger().info("map과 utm 프레임 변환을 발행했습니다.")
-    
         # map과 utm_k_frame 간의 변환도 설정
         t_map_to_utm = geometry_msgs.msg.TransformStamped()
         t_map_to_utm.header.stamp = self.get_clock().now().to_msg()
@@ -193,22 +190,22 @@ class TfBroadcaster(Node):
         self.broadcaster.sendTransform(t_map_to_utm)
         self.get_logger().info("map과 gps프레임 변환을 발행했습니다.")
 
-        t = geometry_msgs.msg.TransformStamped()
-        t.header.stamp = self.get_clock().now().to_msg()
-        t.header.frame_id = 'gps_frame'  # 현재 로봇 프레임으로 설정
-        t.child_frame_id = 'base_link'
+        t_gps_to_base = geometry_msgs.msg.TransformStamped()
+        t_gps_to_base.header.stamp = self.get_clock().now().to_msg()
+        t_gps_to_base.header.frame_id = 'gps_frame'  # 현재 로봇 프레임으로 설정
+        t_gps_to_base.child_frame_id = 'base_link'
         # map 프레임의 위치를 초기화 (기본 위치로 설정)
-        t.transform.translation.x = 0.0
-        t.transform.translation.y = 0.0
-        t.transform.translation.z = 0.0
+        t_gps_to_base.transform.translation.x = 0.0
+        t_gps_to_base.transform.translation.y = 0.0
+        t_gps_to_base.transform.translation.z = 0.0
 
         # 회전을 초기화 (회전 없음)
-        t.transform.rotation.x = 0.0
-        t.transform.rotation.y = 0.0
-        t.transform.rotation.z = 0.0
-        t.transform.rotation.w = 1.0
+        t_gps_to_base.transform.rotation.x = 0.0
+        t_gps_to_base.transform.rotation.y = 0.0
+        t_gps_to_base.transform.rotation.z = 0.0
+        t_gps_to_base.transform.rotation.w = 1.0
 
-        self.broadcaster.sendTransform(t)
+        self.broadcaster.sendTransform(t_gps_to_base)
         self.get_logger().info("gps와 base_link 프레임 변환을 발행했습니다.")
     
 def main(args=None):
