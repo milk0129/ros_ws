@@ -26,12 +26,12 @@ class TfBroadcaster(Node):
 
         # /gps/fix 토픽 발행 설정
         self.publisher_ = self.create_publisher(NavSatFix, '/gps/fix', 10)
-        self.timer = self.create_timer(2.0, self.timer_callback)  # 1초마다 발행
+        self.timer = self.create_timer(3.0, self.timer_callback)  # 3초마다 발행
 
         # map 메시지 발행 설정
         self.map_publisher_ = self.create_publisher(OccupancyGrid, 'map', 10)
-        # map 퍼블리시를 위한 타이머 설정 (1초마다 호출)
-        self.map_publisher_timer = self.create_timer(3.0, self.publish_map_callback)  
+        # map 퍼블리시를 위한 타이머 설정 (2초마다 호출)
+        self.map_publisher_timer = self.create_timer(2.0, self.publish_map_callback)  
 
         # PGM 및 YAML 파일 경로 설정
         self.pgm_file_path = ('/home/ksj/nav2_ws/src/local_pgm/map/empty_map.pgm')
@@ -160,6 +160,7 @@ class TfBroadcaster(Node):
         self.get_logger().info(f"위도, 경도, 고도: {gps_lat}, {gps_lon}, {gps_alt}")
         self.get_logger().info(f"보내는 변환: {utm_x}, {utm_y}, {utm_z}")
         self.get_logger().info("map과 utm 프레임 변환을 발행했습니다.")
+
         """# map 프레임의 위치를 초기화 (기본 위치로 설정)
         t.transform.translation.x = latitude
         t.transform.translation.y = longitude
