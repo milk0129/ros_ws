@@ -1,0 +1,1030 @@
+[
+    {
+        "id": "3190ced726ab9f4e",
+        "type": "tab",
+        "label": "smart_farm",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "1c3b426a.eb3666",
+        "type": "tab",
+        "label": "Flow 2",
+        "disabled": true,
+        "info": ""
+    },
+    {
+        "id": "e7ddded15fed79f4",
+        "type": "tab",
+        "label": "test",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0ac93a5acb868607",
+        "type": "tab",
+        "label": "플로우 1",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4c051ae372f6300d",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#03be63",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#03be63",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#03be63",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#12fb8a",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#03be63",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Go_Smartfarm",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "22f7d8eea7642a2d",
+        "type": "ui_group",
+        "name": "Hudi and Temp",
+        "tab": "8998c0af91b170c2",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8998c0af91b170c2",
+        "type": "ui_tab",
+        "name": "GO_Farm",
+        "icon": "fa-fort-awesome",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "mqtt_broker",
+        "type": "mqtt-broker",
+        "name": "Local MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dd563b232719a7ae",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "http://158.179.193.194",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dashboard_group",
+        "type": "ui_group",
+        "name": "현재 날씨",
+        "tab": "dashboard_tab",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "dashboard_tab",
+        "type": "ui_tab",
+        "name": "기상 정보",
+        "icon": "dashboard",
+        "order": 1
+    },
+    {
+        "id": "81b1bdc3.9a60b8",
+        "type": "ui_group",
+        "name": "Hacks",
+        "tab": "2f5baa7e.0221fe",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2f5baa7e.0221fe",
+        "type": "ui_tab",
+        "name": "Settings",
+        "icon": "timeline",
+        "order": 1,
+        "disabled": true,
+        "hidden": false
+    },
+    {
+        "id": "227c4e591b6d77cb",
+        "type": "inject",
+        "z": "3190ced726ab9f4e",
+        "name": "Inject Time",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 380,
+        "wires": [
+            [
+                "f4a7ad88bfb05361"
+            ]
+        ]
+    },
+    {
+        "id": "f4a7ad88bfb05361",
+        "type": "function",
+        "z": "3190ced726ab9f4e",
+        "name": "Format Time",
+        "func": "var currentTime = new Date();\n\n// UTC 시간 기준으로 한국 시간(UTC+9)으로 변환\nvar koreaOffset = 9 * 60; // UTC+9 시간대를 분 단위로 변환\nvar utc = currentTime.getTime() + (currentTime.getTimezoneOffset() * 60000); // 현재 시간에서 UTC 시간 계산\nvar koreaTime = new Date(utc + (koreaOffset * 60000)); // UTC 시간에서 한국 시간으로 변환\n\n// 한국 시간의 연, 월, 일, 시, 분, 초 구하기\nvar year = koreaTime.getFullYear();\nvar month = koreaTime.getMonth() + 1;\nvar day = koreaTime.getDate();\nvar hours = koreaTime.getHours();\nvar minutes = koreaTime.getMinutes();\nvar seconds = koreaTime.getSeconds();\n\n// 두 자릿수로 맞춤\nif (month < 10) month = '0' + month;\nif (day < 10) day = '0' + day;\nif (hours < 10) hours = '0' + hours;\nif (minutes < 10) minutes = '0' + minutes;\nif (seconds < 10) seconds = '0' + seconds;\n\n// 한국 시간으로 포맷\nmsg.payload = year + '년 ' + month + '월 ' + day + '일 ' + hours + ':' + minutes + ':' + seconds;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 380,
+        "wires": [
+            [
+                "6a71c299238b2ce8"
+            ]
+        ]
+    },
+    {
+        "id": "6a71c299238b2ce8",
+        "type": "ui_text",
+        "z": "3190ced726ab9f4e",
+        "group": "22f7d8eea7642a2d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "Current Time",
+        "label": "현재 시간",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 550,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2bbcfe7463fa262a",
+        "type": "ui_led",
+        "z": "3190ced726ab9f4e",
+        "order": 3,
+        "group": "22f7d8eea7642a2d",
+        "width": 0,
+        "height": 0,
+        "label": "",
+        "labelPlacement": "left",
+        "labelAlignment": "right",
+        "colorForValue": [
+            {
+                "color": "#38ff38",
+                "value": "true",
+                "valueType": "bool"
+            },
+            {
+                "color": "#ea0000",
+                "value": "false",
+                "valueType": "bool"
+            }
+        ],
+        "allowColorForValueInMessage": false,
+        "shape": "circle",
+        "showGlow": true,
+        "name": "",
+        "x": 450,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "37d5e0c63659b211",
+        "type": "ui_switch",
+        "z": "3190ced726ab9f4e",
+        "name": "",
+        "label": "LED",
+        "tooltip": "",
+        "group": "22f7d8eea7642a2d",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 130,
+        "y": 320,
+        "wires": [
+            [
+                "2bbcfe7463fa262a"
+            ]
+        ]
+    },
+    {
+        "id": "095e151db86abef6",
+        "type": "debug",
+        "z": "3190ced726ab9f4e",
+        "name": "debug 5",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 720,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "21cdad1ec64d78fd",
+        "type": "inject",
+        "z": "3190ced726ab9f4e",
+        "name": "주기적 호출",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 190,
+        "y": 480,
+        "wires": [
+            [
+                "e6aa604d25934a27"
+            ]
+        ]
+    },
+    {
+        "id": "e6aa604d25934a27",
+        "type": "http request",
+        "z": "3190ced726ab9f4e",
+        "name": "기상청 API 요청",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=109",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 400,
+        "y": 480,
+        "wires": [
+            [
+                "a6b747e1af1591f1",
+                "994cc7910c8d6a7c"
+            ]
+        ]
+    },
+    {
+        "id": "34ed0ad11eab83fc",
+        "type": "function",
+        "z": "3190ced726ab9f4e",
+        "name": "온도 & 습도 추출",
+        "func": "let weatherData = msg.payload;  // XML이 JSON으로 변환된 데이터\n\n// tmx 값 추출\nlet maxTemperature = weatherData.data.tmx[0];\n\nmsg.payload = {\n    maxTemperature: maxTemperature  // 최고 기온 값\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 790,
+        "y": 460,
+        "wires": [
+            [
+                "b10d8a419e8ecd28",
+                "a43cf9685786469e",
+                "f9287be7953027b6"
+            ]
+        ]
+    },
+    {
+        "id": "b10d8a419e8ecd28",
+        "type": "ui_text",
+        "z": "3190ced726ab9f4e",
+        "group": "22f7d8eea7642a2d",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "온도",
+        "label": "온도",
+        "format": "{{msg.payload.temperature}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#ffffff",
+        "x": 990,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "a43cf9685786469e",
+        "type": "ui_text",
+        "z": "3190ced726ab9f4e",
+        "group": "22f7d8eea7642a2d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "습도",
+        "label": "습도",
+        "format": "{{msg.payload.humidity}} %",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 990,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a6b747e1af1591f1",
+        "type": "debug",
+        "z": "3190ced726ab9f4e",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": true,
+        "complete": "payload.jason",
+        "targetType": "msg",
+        "statusVal": "payload",
+        "statusType": "auto",
+        "x": 600,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "f9287be7953027b6",
+        "type": "debug",
+        "z": "3190ced726ab9f4e",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 960,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "994cc7910c8d6a7c",
+        "type": "xml",
+        "z": "3190ced726ab9f4e",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 630,
+        "y": 580,
+        "wires": [
+            [
+                "34ed0ad11eab83fc"
+            ]
+        ]
+    },
+    {
+        "id": "dd5f965e.fb70b8",
+        "type": "ui_template",
+        "z": "3190ced726ab9f4e",
+        "group": "81b1bdc3.9a60b8",
+        "name": "CSS-Basics",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    root,\n    a,\n    button,\n    p,\n    div {\n        //기본 요소 비활성화 (선택 복사 방지)\n        -webkit-user-select: none !important;\n    }\n\n    body {\n        // 전체 페이지 배경 및 스타일\n        background-size: cover !important;\n        background: -webkit-linear-gradient(45deg,\n                #81C147 0%,\n                #06A66C 100%) !important;\n\n        -webkit-touch-callout: none !important;\n        padding-top: 5px !important;\n    }\n\n\n    ui-card-panel {\n        background-color: rgba(0, 0, 0, 0.2) !important;\n        border: none !important;\n        border-radius: 10px !important;\n        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.19) !important;\n    }\n\n    ui-card-panel>div.nr-dashboard-cardpanel>div>md-card {\n        background: none !important;\n    }\n\n    md-toolbar {\n        background: none !important;\n    }\n\n    md-sidenav {\n        background: linear-gradient(120deg, rgba(40, 42, 49, 0.90) 20%, rgba(47, 49, 56, 0.90) 80%) !important;\n    }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "global",
+        "className": "",
+        "x": 150,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "361f74359b3fb994",
+        "type": "inject",
+        "z": "1c3b426a.eb3666",
+        "name": "Inject Time",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "1",
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 290,
+        "y": 440,
+        "wires": [
+            [
+                "caaf69183ef62459"
+            ]
+        ]
+    },
+    {
+        "id": "caaf69183ef62459",
+        "type": "function",
+        "z": "1c3b426a.eb3666",
+        "name": "Format Time",
+        "func": "var currentTime = new Date();\n\n// UTC 시간 기준으로 한국 시간(UTC+9)으로 변환\nvar koreaOffset = 9 * 60; // UTC+9 시간대를 분 단위로 변환\nvar utc = currentTime.getTime() + (currentTime.getTimezoneOffset() * 60000); // 현재 시간에서 UTC 시간 계산\nvar koreaTime = new Date(utc + (koreaOffset * 60000)); // UTC 시간에서 한국 시간으로 변환\n\n// 한국 시간의 연, 월, 일, 시, 분, 초 구하기\nvar year = koreaTime.getFullYear();\nvar month = koreaTime.getMonth() + 1;\nvar day = koreaTime.getDate();\nvar hours = koreaTime.getHours();\nvar minutes = koreaTime.getMinutes();\nvar seconds = koreaTime.getSeconds();\n\n// 두 자릿수로 맞춤\nif (month < 10) month = '0' + month;\nif (day < 10) day = '0' + day;\nif (hours < 10) hours = '0' + hours;\nif (minutes < 10) minutes = '0' + minutes;\nif (seconds < 10) seconds = '0' + seconds;\n\n// 한국 시간으로 포맷\nmsg.payload = year + '년 ' + month + '월 ' + day + '일 ' + hours + ':' + minutes + ':' + seconds;\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 440,
+        "wires": [
+            [
+                "b38cf3d5a7f8cbac"
+            ]
+        ]
+    },
+    {
+        "id": "b38cf3d5a7f8cbac",
+        "type": "ui_text",
+        "z": "1c3b426a.eb3666",
+        "group": "22f7d8eea7642a2d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "Current Time",
+        "label": "현재 시간",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 690,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "inject_node",
+        "type": "inject",
+        "z": "1c3b426a.eb3666",
+        "name": "주기적 호출",
+        "props": [
+            {
+                "p": "payload"
+            }
+        ],
+        "repeat": "300",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "",
+        "topic": "",
+        "payload": "",
+        "payloadType": "str",
+        "x": 330,
+        "y": 740,
+        "wires": [
+            [
+                "http_request_node"
+            ]
+        ]
+    },
+    {
+        "id": "http_request_node",
+        "type": "http request",
+        "z": "1c3b426a.eb3666",
+        "name": "기상청 API 요청",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://apihub.kma.go.kr/api/typ01/url/kma_sfctm2.php?tm=202211300900&stn=0&help=1&authKey=OupEQxoQTdGqREMaEE3Rvw",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Authorization",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "OupEQxoQTdGqREMaEE3Rvw"
+            }
+        ],
+        "x": 530,
+        "y": 840,
+        "wires": [
+            [
+                "3562b587026078da",
+                "60386568de7e54cc"
+            ]
+        ]
+    },
+    {
+        "id": "function_node",
+        "type": "function",
+        "z": "1c3b426a.eb3666",
+        "name": "온도 & 습도 추출",
+        "func": "// msg.payload에는 JSON 응답 데이터가 들어있음\nvar items = msg.payload.response.body.items.item;\n\n// 온도와 습도 값을 초기화\nvar temperature, humidity;\n\n// 온도와 습도 데이터 찾기\nfor (var i = 0; i < items.length; i++) {\n    if (items[i].category === 'TMP') {\n        temperature = items[i].obsrValue; // 온도\n    }\n    if (items[i].category === 'REH') {\n        humidity = items[i].obsrValue; // 습도\n    }\n}\n\n// msg.payload에 온도와 습도 정보를 저장\nmsg.payload = {\n    temperature: temperature, // 온도 값\n    humidity: humidity        // 습도 값\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 930,
+        "y": 840,
+        "wires": [
+            [
+                "ui_text_temperature",
+                "ui_text_humidity"
+            ]
+        ]
+    },
+    {
+        "id": "ui_text_temperature",
+        "type": "ui_text",
+        "z": "1c3b426a.eb3666",
+        "group": "22f7d8eea7642a2d",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "온도",
+        "label": "온도",
+        "format": "{{msg.payload.temperature}} °C",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1130,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ui_text_humidity",
+        "type": "ui_text",
+        "z": "1c3b426a.eb3666",
+        "group": "22f7d8eea7642a2d",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "습도",
+        "label": "습도",
+        "format": "{{msg.payload.humidity}} %",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": "",
+        "color": "#000000",
+        "x": 1130,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "3562b587026078da",
+        "type": "xml",
+        "z": "1c3b426a.eb3666",
+        "name": "",
+        "property": "payload",
+        "attr": "",
+        "chr": "",
+        "x": 730,
+        "y": 840,
+        "wires": [
+            [
+                "function_node",
+                "94ebffb71699d9f7"
+            ]
+        ]
+    },
+    {
+        "id": "60386568de7e54cc",
+        "type": "debug",
+        "z": "1c3b426a.eb3666",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "94ebffb71699d9f7",
+        "type": "debug",
+        "z": "1c3b426a.eb3666",
+        "name": "debug 3",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 920,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "cds_in",
+        "type": "mqtt in",
+        "z": "e7ddded15fed79f4",
+        "name": "CDS Sensor",
+        "topic": "gosung/cds",
+        "qos": "0",
+        "datatype": "int",
+        "broker": "dd563b232719a7ae",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 200,
+        "wires": [
+            [
+                "adjust_led"
+            ]
+        ]
+    },
+    {
+        "id": "adjust_led",
+        "type": "function",
+        "z": "e7ddded15fed79f4",
+        "name": "Adjust LED Brightness",
+        "func": "var cdsValue = msg.payload;\nvar ledBrightness = Math.round((1023 - cdsValue) / 4);\nledBrightness = Math.max(0, Math.min(255, ledBrightness));\nmsg.payload = ledBrightness;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 200,
+        "wires": [
+            [
+                "382a730fccf6f4c6"
+            ]
+        ]
+    },
+    {
+        "id": "soil_in",
+        "type": "mqtt in",
+        "z": "e7ddded15fed79f4",
+        "name": "Soil Moisture",
+        "topic": "gosung/waterlevel",
+        "qos": "0",
+        "datatype": "int",
+        "broker": "dd563b232719a7ae",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 300,
+        "wires": [
+            [
+                "check_moisture"
+            ]
+        ]
+    },
+    {
+        "id": "check_moisture",
+        "type": "function",
+        "z": "e7ddded15fed79f4",
+        "name": "Check Moisture",
+        "func": "var soilMoisture = msg.payload;\nvar threshold = 500;\nif (soilMoisture < threshold) {\n    msg.payload = \"WATER_ON\";\n} else {\n    msg.payload = \"WATER_OFF\";\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 300,
+        "wires": [
+            [
+                "moisture_switch"
+            ]
+        ]
+    },
+    {
+        "id": "moisture_switch",
+        "type": "switch",
+        "z": "e7ddded15fed79f4",
+        "name": "Water Decision",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "WATER_ON",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "WATER_OFF",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 500,
+        "y": 300,
+        "wires": [
+            [
+                "servo_on"
+            ],
+            [
+                "servo_off"
+            ]
+        ]
+    },
+    {
+        "id": "servo_on",
+        "type": "mqtt out",
+        "z": "e7ddded15fed79f4",
+        "name": "Servo ON",
+        "topic": "actuators/servo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dd563b232719a7ae",
+        "x": 720,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "servo_off",
+        "type": "mqtt out",
+        "z": "e7ddded15fed79f4",
+        "name": "Servo OFF",
+        "topic": "actuators/servo",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dd563b232719a7ae",
+        "x": 710,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "dht_in",
+        "type": "mqtt in",
+        "z": "e7ddded15fed79f4",
+        "name": "DHT Sensor",
+        "topic": "gosung/dht",
+        "qos": "0",
+        "datatype": "json",
+        "broker": "dd563b232719a7ae",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 110,
+        "y": 400,
+        "wires": [
+            [
+                "dht_debug"
+            ]
+        ]
+    },
+    {
+        "id": "dht_debug",
+        "type": "debug",
+        "z": "e7ddded15fed79f4",
+        "name": "DHT Data",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 310,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "382a730fccf6f4c6",
+        "type": "ui_text",
+        "z": "e7ddded15fed79f4",
+        "group": "22f7d8eea7642a2d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "cds:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 550,
+        "y": 200,
+        "wires": []
+    }
+]
