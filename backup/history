@@ -1,0 +1,13 @@
+450 ->         grid_msg.info.origin.position.x = self.origin[0] + 0.00307 
+	       grid_msg.info.origin.position.y = self.origin[1] + 0.00300 
+	       7시17분 사진
+400 -> 	grid_msg.info.origin.position.x = self.origin[0] + 0.00286
+        grid_msg.info.origin.position.y = self.origin[1] + 0.00279	  
+        
+500 ->    0.00370, 0.00380
+
+
+550 ->  0.00349, 0.00355
+
+580 -> 
+
