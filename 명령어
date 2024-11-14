@@ -1,0 +1,4 @@
+ros2 launch local_pgm local_pgm_launch_file.launch.py #tf_broad랑 gps 같이 실행 됨
+현재 위치는 gps tf고, 마커는 명욱이가 따로 db 좌표 수정 한다해서 정확하지 않음
+tf노드 map경로랑 yaml경로 수정하고 gps 노드 보레이트 맞게 수정
+

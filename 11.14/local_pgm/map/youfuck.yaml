@@ -1,0 +1,7 @@
+image: youfuck2_550.pgm
+mode: trinary
+resolution: 0.00001
+origin: [37.631013, 127.054042, 0.0]
+negate: 0
+occupied_thresh: 50
+free_thresh: 50
